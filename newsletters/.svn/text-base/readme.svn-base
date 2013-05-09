@@ -1,0 +1,25 @@
+# Newsletters
+
+This is a poorly named module, but is use for two primary use cases:
+
+1. Preparing newsletters for a proof.
+2. Preparing newsletters for production.
+
+Scripts that have been actively used recently are `proof.py` and `newsletters.py`.
+
+## Expected Input:
+
+The directory in which the script is being run should contain the following:
+* statements.pdf - PDF containing all statements created from Optimal File.
+* data.csv - Optimal File.
+* documents - Documents directory from order package containing a manifest.csv file.
+* lookup.csv - Lookup file.
+
+## proof.py
+
+This will create a single proof file containing statements and newsletters inline
+for each record in `data.csv` + `statements.pdf`.
+
+## newsletters.py
+
+Prepares newsletter files for production per association.
